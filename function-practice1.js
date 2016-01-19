@@ -53,9 +53,6 @@ function tiny(n) {
 
 function getSeconds(time) {
 	var seconds = 0
-	seconds += ((time.substring(0, 2) * 60) + time.substring(3, 5))
+	seconds += (((Number(time.substring(0, 2))) * 60) + Number(time.substring(3, 5)))
 	return seconds
 }
-
-console.log(getSeconds("03:45"))
-console.log(getSeconds("10:20"))
